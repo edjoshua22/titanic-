@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#9C27B0">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titanic Survival Predictor"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/etPclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pclass (1, 2, or 3)"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <EditText
+        android:id="@+id/etSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sex (male or female)"
+        android:layout_below="@id/etPclass"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_below="@id/etSex"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <EditText
+        android:id="@+id/etSibSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Siblings/Spouses"
+        android:layout_below="@id/etAge"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <EditText
+        android:id="@+id/etParch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parents/Children"
+        android:layout_below="@id/etSibSp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <EditText
+        android:id="@+id/etFare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fare"
+        android:layout_below="@id/etParch"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:textColorHint="@color/hintColor"/>
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Predict"
+        android:layout_below="@id/etFare"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPredict"
+        android:textSize="20sp"
+        android:textColor="@color/resultColor"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

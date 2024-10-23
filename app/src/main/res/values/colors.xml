@@ -1,0 +1,10 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backgroundColor">#FFFFFF</color> <!-- Add your other colors here -->
+    <color name="editTextColor">#F0F0F0</color>
+    <color name="buttonColor">#6200EE</color>
+    <color name="resultColor">#FF0000</color> <!-- Example for result text -->
+    <color name="hintColor">#A9A9A9</color> <!-- Example for hint color -->
+</resources>
